@@ -197,7 +197,7 @@ int main()
 	{
 		system("cls");
 		cout << "您的分辨率是: " << ScreenWH(0) << "x" << ScreenWH(1) << endl << endl;
-		cout << "注：多人分屏时游戏窗口将置顶，可能会挡住其他窗口" << endl << "项目Github网址：https://github.com/Ashan71/SplitScreenForMinecraft" << endl << endl;
+		cout << "注：多人分屏时游戏窗口将置顶，可能会挡住其他窗口" << endl << "项目Github网址：https://github.com/KingTom871/SplitScreenForMinecraft" << endl << endl;
 		cout << "单人无边框全屏 --- 1" << endl
 			<< "双人上下分屏 --- 2" << endl
 			<< "三人分屏 --- 3" << endl
