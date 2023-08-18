@@ -32,7 +32,7 @@ void SplitScreen2(int PlayerID)
 	{
 		system("cls");
 		//提示输入
-		cout << "请输入" << PlayerID << "号玩家窗口名称" << endl;
+		cout << "请输入" << PlayerID << "号玩家窗口标题" << endl;
 		//获取窗口
 		wstring WindowName;
 		wcin >> WindowName;
@@ -74,7 +74,7 @@ void SplitScreen3(int PlayerID) {
 	{
 		system("cls");
 		//提示输入
-		cout << "请输入" << PlayerID << "号玩家窗口名称" << endl;
+		cout << "请输入" << PlayerID << "号玩家窗口标题" << endl;
 		//获取窗口
 		wstring WindowName;
 		wcin >> WindowName;
@@ -128,7 +128,7 @@ void SplitScreen4(int PlayerID) {
 	{
 		system("cls");
 		//提示输入
-		cout << "请输入" << PlayerID << "号玩家窗口名称" << endl;
+		cout << "请输入" << PlayerID << "号玩家窗口标题" << endl;
 		//获取窗口
 		wstring WindowName;
 		wcin >> WindowName;
@@ -227,7 +227,7 @@ int main()
 		while (true)
 		{
 			system("cls");
-			cout << "请输入游戏窗口名称" << endl;
+			cout << "请输入游戏窗口标题" << endl;
 			//获取窗口
 			wstring WindowName;
 			wcin >> WindowName;
