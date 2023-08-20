@@ -46,15 +46,15 @@ void SplitScreen2(int PlayerID)
 			int Width = ScreenWH(0);
 			int Height = ScreenWH(1) / 2;
 			// 设置窗口位置
-			int Y;
-			if (PlayerID == 1)
-			{
-				Y = 0;
-			}
-			else
-			{
-				Y = Height;
-			}
+			int Y = PlayerID == 1 ? 0 : Height;
+			//if (PlayerID == 1)
+			//{
+			//	Y = 0;
+			//}
+			//else
+			//{
+			//	Y = Height;
+			//}
 			// 移动和调整窗口大小
 			SetWindowPos(Window, HWND_TOPMOST, 0, Y, Width, Height, SWP_SHOWWINDOW);
 			break;
@@ -85,7 +85,7 @@ void SplitScreen3(int PlayerID) {
 			// 将窗口设置为无边框窗口模式
 			SetWindowLong(Window, GWL_STYLE, GetWindowLong(Window, GWL_STYLE) and not WS_CAPTION);
 			// 设置窗口大小和位置
-			int Width, Height, X, Y;
+			int Width = 0, Height = 0, X = 0, Y = 0;
 			switch (PlayerID)
 			{
 			case 1: {
@@ -139,7 +139,7 @@ void SplitScreen4(int PlayerID) {
 			// 将窗口设置为无边框窗口模式
 			SetWindowLong(Window, GWL_STYLE, GetWindowLong(Window, GWL_STYLE) and not WS_CAPTION);
 			// 设置窗口大小和位置
-			int Width, Height, X, Y;
+			int Width = 0, Height = 0, X = 0, Y = 0;
 			switch (PlayerID)
 			{
 			case 1: {
@@ -190,7 +190,7 @@ int main()
 	HWND console = GetForegroundWindow();
 	SetWindowPos(console, HWND_TOPMOST, NULL, NULL, NULL, NULL, SWP_NOMOVE | SWP_NOSIZE);
 	// 获取用户输入
-	int number;
+	int number = 0;
 	string input;
 	//检查用户输入是否有效
 	while (true)
